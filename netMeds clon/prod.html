@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/40bdc223da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/prod.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        
+        <li id="searchbox">
+          <a href="#"
+            ><input type="text" placeholder="Search for medicine & wellness products..."  style="padding: 15px 350px; margin-left: 50px; border-radius: 20px; border: 0px;"/><i
+              id="searchicon"
+            ></i>
+          </a>
+        </li>
+  
+       
+       
+        <li>
+          <a class="navopt" href="./cart.html" style="margin-left: 100px; color: whitesmoke;"
+            ><i id="cart" class="fas fa-cart-plus"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="belownav">
+      <div><i class="fas fa-home"></i>  Kota (Raj.),324001</div>
+      <div><i class="fas fa-map-marker-alt"></i>  Nayapura</div>
+    </div>
+    <a href="https://www.netmeds.com/prescriptions">
+      <p id="fadeElectronics">NetMeds Medicine</p>
+    </a>
+
+
+    <div class="optionColect">
+      <div id="option">
+        <select name="" id="sortByPrice" onchange="handlePriceSort()">
+          <option value="">All filters</option>
+          <option value="low">low to high</option>
+          <option value="high">high to low</option>
+        </select>
+      </div>
+
+      <div class="stuff" id="instore"><i class="fas fa-home"></i> In-store</div>
+
+      <div class="stuff">Pickup&shipping</div>
+      <div class="stuff"><i class="fas fa-dollar-sign"></i> Price</div>
+      <div class="stuff">Brand</div>
+      <div class="stuff"><i class="far fa-clock"></i> Speed</div>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="footer">
+      <div id="tags">
+  
+          <a href="./prod.html">All Products</a>
+          <a href="https://www.netmeds.com/about-us">About Netmeds</a>
+          <a href="https://www.netmeds.com/news">In The News</a>
+          <a href="https://netmeds.darwinbox.in/ms/candidate/careers"> Careers</a>
+          <a href="https://netmeds.darwinbox.in/ms/candidate/careers">Career</a>
+  
+          <a href="https://www.netmeds.com/terms-and-conditions">Terms and Conditions</a>
+          <a href="https://www.netmeds.com/privacy-policy">Privacy Policy</a>
+  
+          <a href="https://www.netmeds.com/fees-and-payments-policy">fees and Payments Policy</a>
+          <a href="https://www.netmeds.com/shipping-and-delivery-policy">Shipping and Delivery Policy</a>
+          <a href=" https://www.netmeds.com/return-refund-and-cancellation-policy">Return,Refund and Cancellation Policy</a>
+          <a href="https://www.netmeds.com/customer/account/login">Contact</a>
+          <a href="https://twitter.com/NetMeds">Twitter</a>
+          <a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">YouTube</a>
+  
+      </div>
+      
+      <h4>Copyright© 2021. All Rights Reserved.</h4>
+  </div>
+  
+    <script src="./js/prod.js"></script>
+  </body>
+</html>

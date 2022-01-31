@@ -1,0 +1,226 @@
+/* NAVBAR START */
+#navbar {
+  height: 50px;
+  width: 101.4%;
+
+  margin-top: -10px;
+  padding-top: 30px;
+  background-color: #33AEB0;
+  margin-left: -10px;
+}
+#navbar > ul {
+  background-color: #33AEB0;
+  height: 50px;
+  width: 100%;
+  margin-left: -10px;
+
+  margin-top: 25px;
+}
+#navbar ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+#navbar ul li {
+  float: left;
+  position: relative;
+  /* z-index: 1; */
+  font-size: 12px;
+  height: 7vh;
+  /* margin: 0; */
+  padding: 0;
+}
+
+#navbar ul ul {
+  position: absolute;
+
+  background-color: white;
+  width: 140px;
+  /* color: black; */
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-left: 10px;
+  border-radius: 10px;
+
+  padding-top: 20px;
+}
+
+/*  */
+#belownav {
+  height: 30px;
+  color: white;
+  display: flex;
+  width: 101.4%;
+  margin-top: -10px;
+  padding-top: 18px;
+  background-color: #33AEB0;
+  margin-left: -10px;
+}
+#belownav div {
+  padding-left: 10px;
+  text-decoration: underline;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#cart {
+  margin-left: 30px;
+}
+
+.dep {
+  font-size: 5px;
+}
+
+#in {
+  background-color: rgb(0, 113, 220);
+  color: white;
+  margin-top: 100px;
+  height: 50px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#up {
+  margin-left: 10px;
+}
+.acc {
+  padding-top: 50px;
+
+  width: 400px;
+}
+/* NAVBAR END */
+
+* {
+  font-family: "Roboto", sans-serif;
+  /* font-size: 12px; */
+}
+
+#container {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+#container div {
+  background-color: rgb(173, 215, 235);
+  width: 250px;
+  height: 380px;
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+#container div:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+#container div img {
+  /* border: 1px solid black; */
+  width: 240px;
+  height: 200px;
+  margin-top: 4px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+button {
+  background-color: rgb(0, 113, 220);
+
+  width: 90px;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+
+  border: 1px solid white;
+  margin-top: -40px;
+}
+button:hover {
+  background-color: rgb(0, 154, 103);
+  color: black;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 700;
+}
+.detail {
+  font-size: 16px;
+  font-weight: 200;
+}
+#fadeElectronics {
+  color: rgb(92, 87, 87);
+  font-size: 15px;
+  margin-left: 600px;
+}
+
+#sortByPrice {
+  border-radius: 15px;
+  width: 90px;
+  height: 30px;
+  background-color: rgb(241, 241, 242);
+  border: 1px solid white;
+  font-size: 12px;
+  color: rgb(89, 85, 85);
+}
+.optionColect {
+  display: flex;
+  border: 1px solid rgb(234, 215, 215);
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+  margin-left: -10px;
+  gap: 20px;
+}
+.stuff {
+  border-radius: 15px;
+  width: 90px;
+  height: 20px;
+  background-color: rgb(241, 241, 242);
+  border: 1px solid white;
+  font-size: 12px;
+  color: rgb(89, 85, 85);
+  padding-top: 5px;
+  padding-left: 15px;
+  cursor: pointer;
+  margin-left: 110px;
+}
+/* footer */
+
+#footer {
+  background-color: #e7bef3;
+  height: 200px;
+  text-align: center;
+}
+#tags {
+  padding: 30px;
+}
+#tags > a {
+  color: black;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+#footer > h5 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}

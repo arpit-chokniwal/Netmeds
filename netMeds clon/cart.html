@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/40bdc223da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/cart.css" />
+    <title>cart</title>
+  </head>
+  <body>
+    <div id="cart">
+      <div class="cartmaincontainer">
+        <div id="header" >
+          Cart
+          <p id="cross"><i class="far fa-window-close"></i></p>
+        </div>
+        <div class="shipingaddress">
+          <p class="shipping">shipping to <span>324001</span></p>
+          <p>
+            Arrives between
+            <span id="address">sat 13th Dec - sunday 20th Dec </span>
+          </p>
+        </div>
+        <p id="happy" style="margin-left: 30px;">sold and shipped by <span>NetMeds </span></p>
+        <hr />
+        <div id="cartcontainer">
+          <div id="cartImg">
+            <img
+              style="height: 100%; width: 100%"
+              src="https://i5.walmartimages.com/dfw/63fd9f59-e0d6/65ab57af-59d6-423a-9500-1fa5ab36d1c7/v1/empty-cart.svg?odnHeight=240&odnWidth=200&odnBg=ffffff"
+              alt=""
+            />
+          </div>
+          <div id="belowimg">Time to start shopping!</div>
+          <p id="statement">Fill it up with your favorite items</p>
+        </div>
+
+
+        
+        <div class="cart2ndmain"></div>
+      </div>
+      <hr />
+      <div class="lastdiv">
+        <div id="totalitem"></div>
+        <div id="total"></div>
+        <button id="checkout">make payment</button>
+      </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

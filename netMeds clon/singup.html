@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netmeds Sing-Up Page</title>
+    <style>
+#main{
+    height: 600px;
+    width: 30%;
+    margin: auto;
+    border: 3px solid #8BC552;
+}
+#logo>img{
+    height: 5%;
+    width: 22%;
+    padding-left: 150px;
+}
+#heading>h3,h2{
+    text-align: center;
+    color: #13A8B0;
+}
+.input{
+    margin-top: 10px;
+}
+.text{
+    border: 1px solid #8BC552;
+    height: 40px;
+    width: 90%;
+    margin-left: 17px
+}
+#button>button{
+    border: 0px;
+    background-color: #8BC552;
+    border-radius: 10px;
+    padding: 10px 90px;
+    margin: 30px 80px 4px;
+}
+#singin>button{
+    border: 0px;
+    background-color: #8BC552;
+    border-radius: 10px;
+    padding: 10px 90px;
+    margin-top: 6px;
+margin-left: 90px;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div  id="logo" >
+            <img src="https://www.netmeds.com/images/cms/offers/1617194339_Netmeds_logo.png" alt="">
+        </div>
+        <div id="heading">
+            <h2>Welcome to Netmeds</h2>
+            <h3>Creat Account</h3>
+        </div>
+        <div class="input"><input type="text" placeholder="First Name" class="text" id="name"></div>
+
+        <div class="input">    <input type="text" placeholder="Last Name" class="text" id="lname"></div>
+        <div class="input">
+            <input type="email" placeholder="E-Mail Address" class="text" id="email"></div>
+        <div class="input"> <input type="password" placeholder="Enter Password" class="text" id="pass"> 
+        </div>
+        
+        <div  id="button">
+            <button>
+               Create Account 
+            </button>
+        </div>
+        <div class="button" id="singin">
+            <button>
+                Sign In
+            </button>
+        </div>
+            
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    document.querySelector("button").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+  
+    function signUp() {
+      var name = document.getElementById("name").value;
+      var lname = document.getElementById("lname").value;
+      var email = document.getElementById("email").value;
+      var pass = document.getElementById("pass").value;
+      // console.log(name,lname,email,pass)
+      var userCredentials = {
+        firstName: name,
+        lastName: lname,
+        emailAddress: email,
+        passWord: pass,
+      };
+      // console.log(userCredentials)
+      userArr.push(userCredentials);
+      localStorage.setItem("userData", JSON.stringify(userArr));
+      window.location.href = "./Signin.html";
+    }
+  </script>
+  

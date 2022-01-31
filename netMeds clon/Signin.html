@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netmeds Sing-Up Page</title>
+    <style>
+#main{
+    margin: auto;
+    margin-top: 80px;
+    height: 400px;
+    width: 30%;
+    border: 3px solid #13A8B0;
+}
+#logo>img{
+    height: 5%;
+    width: 22%;
+    padding-left: 150px;
+}
+#heading>h2{
+    text-align: center;
+    color: #8BC552;
+}
+.input{
+    margin-top: 10px;
+}
+.text{
+    
+    border-radius: 10px;
+    border: 1px solid #13A8B0;
+    height: 40px;
+    width: 90%;
+    margin-left: 17px
+}
+
+#singin>button{
+    border-radius: 10px;
+    border: 0px;
+    background-color: #13A8B0;
+    border-radius: 10px;
+    padding: 15px 70px;
+    margin-top: 30px;
+margin-left: 110px;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div  id="logo" >
+            <img src="https://www.netmeds.com/images/cms/offers/1617194339_Netmeds_logo.png" alt="">
+        </div>
+        <div id="heading">
+            <h2>Sign-in to your Netmeds Account</h2>
+        </div>
+        
+        <div class="input">
+            <input type="email" placeholder="E-Mail Address" class="text" id="email"></div>
+        <div class="input"> <input type="password" placeholder="Enter Password" class="text" id="pass"> 
+        </div>
+        
+        <div class="button" id="singin">
+            <button>
+                Sing In
+            </button>
+        </div>
+            
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+<script>
+    document.querySelector("button").addEventListener("click", signIn);
+    var regUsers = JSON.parse(localStorage.getItem("userData"));
+  
+    function signIn() {
+      var email = document.querySelector("#email").value;
+      var pass = document.querySelector("#pass").value;
+  
+      for (var i = 0; i < regUsers.length; i++) {
+        if (regUsers[i].emailAddress == email && regUsers[i].passWord == pass) {
+          window.location.href = "./body.html";
+        }
+    }
+    }
+  </script>
+  

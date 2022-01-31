@@ -1,0 +1,387 @@
+/* NAVBAR START */
+#navbar {
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  margin-top: -10px;
+  padding-top: 30px;
+  background-color:   #33AFB1;
+  
+  margin-left: -10px;
+}
+#navbar > ul {
+  background-color:   #33AFB1;
+  height: 40px;
+  width: 100%;
+  color: white;
+  margin-top: 25px;
+}
+#navbar ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0;
+}
+.navopt {
+  color: white;
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+.navop {
+  color: black;
+  padding-left: 10px;
+}
+.navop:hover {
+  text-decoration: underline;
+  font-weight: lighter;
+
+}
+#navbar ul li {
+  float: left;
+  position: relative;
+
+  font-size: 10px;
+  height: 10vh;
+  /* margin-left: ; */
+  padding: 0;
+}
+
+#navbar ul ul {
+  position: absolute;
+  /* border: 1px solid grey; */
+  box-shadow: #0000003d 0px 3px 8px;
+
+  background-color: white;
+  width: 140px;
+
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-left: 10px;
+  border-radius: 10px;
+
+  padding-top: 20px;
+}
+
+#navbar ul li:hover > ul {
+  color: white;
+  display: block;
+  text-decoration: underline;
+  margin-top: 1vh;
+}
+#navbar ul ul li:hover {
+  text-decoration: underline;
+}
+#searchbox {
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 5px;
+  margin-top: -5px;
+  margin-left: 15px;
+  top: 0;
+  height: 5px;
+  width: 50%;
+}
+input {
+  width: 300px;
+  border: 1px solid white;
+}
+
+#accounts {
+  font-size: 10px;
+}
+#belownav {
+  padding: 10px;
+  height: 30px;
+  color: white;
+  display: flex;
+  width: 100%;
+  margin-top: -10px;
+  padding-top: 18px;
+  background-color:  #33AFB1;
+  margin-left: -10px;
+}
+#belownav div {
+  text-decoration: underline;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#cart {
+  margin-left: 30px;
+}
+
+.dep {
+  font-size: 5px;
+}
+
+#in {
+  font-weight: 10px;
+  margin-top: 100px;
+  height: 100px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 0px;
+}
+#up {
+  font-weight: 10px;
+  margin-top: 100px;
+  height: 100px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 0px;
+  margin-left: 10px;
+}
+.acc {
+  padding-top: 50px;
+
+  width: 400px;
+}
+
+/* BelowScrollBar======================================================================================================================== */
+
+
+
+#parent {
+  width: 98%;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+#parent>img{
+  width: 100%;
+  height: 300px;
+}
+/* BelowScrollBar */
+
+/* first Card */
+
+#tranding{
+  height: 230px;
+  width: 98%;
+  display: flex;
+}
+
+#tranding>img{
+  width: 32%;
+  height: 100%;
+margin: 0% 0.5%;
+border-radius: 10px;
+}
+
+#tranding > img:hover {
+  width: 106%;
+  height: 105%;
+}
+
+#sbc{
+  display: flex;
+  margin: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.sbcdiv{
+  padding: 20px;
+  height: 200px;
+  width: 70%;
+  margin: 20px;
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.sbcdiv > img{
+  width: 150px;
+}
+
+
+.sbcdiv > h4{
+ text-align: center;
+ 
+}
+
+
+
+
+
+
+
+
+/* walmart-get a 4Hrs */
+
+#member {
+  display: flex;
+  margin: auto;
+  height: 80px;
+  width: 70%;
+  margin-top: 20px;
+  color:   #33AFB1;
+  border-radius: 10px;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+#member > img {
+  height: 95%;
+  width: 100px;
+  margin: 20px 25px;
+}
+#member > a > button {
+  background-color:  #33AFB1;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border: 0px;
+  margin: 0px 0px 40px 20px;
+}
+#member > a > button:hover {
+  background-color:   #33AFB1;
+}
+#member > a {
+  margin: 20px 15px;
+}
+
+/* Great gifts for less */
+.great-must {
+  background-color: #8A9095;
+  width: 98%;
+  height: 300px;
+  border-top: 1px solid #e0e0e2;
+  border-bottom: 1px solid #e0e0e2;
+  display: flex;
+  border-radius: 10px;
+}
+.great-must > div {
+  width: 24%;
+  height: 95%;
+  margin-left: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+.great-must > div img {
+  width: 80%;
+  height: 80%;
+}
+.great-must > div img:hover {
+  width: 98%;
+  height: 83%;
+}
+
+/* cash back */
+#cashBack {
+  display: flex;
+  width: 50%;
+  height: 80px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+#cashBack > div {
+  width: 80px;
+  height: 50px;
+}
+#cashBack > div img {
+  width: 100%;
+  height: 100%;
+}
+#cashBack > h3,
+a {
+  margin-left: 15px;
+  color: black;
+}
+#cashBack > a:hover {
+  color: #ec3b1c;
+}
+#cashBack > h3:hover {
+  text-decoration: underline 3px solid #1aaa62;
+}
+/* Feedback Div */
+#feedback {
+  background-color: #F3F6FA;
+  height: 980px;
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* fku */
+
+#fku{
+  height: 150px;
+  width: 100%;
+  display: flex;
+}
+
+#fku>img{
+  width: 20%;
+  height: 100%;
+}
+
+#fku>p{
+  padding: 50px;
+  margin: auto;
+}
+
+
+
+
+/* footer */
+
+#footer {
+  height: 200px;
+  text-align: center;
+}
+#tags {
+  padding: 30px;
+}
+#tags > a {
+  margin-top: 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+#footer > h5 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+
+#helconc{
+  display: flex;
+  margin: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.heldiv{
+  padding: 20px;
+  height: 200px;
+  width: 70%;
+  margin: 20px;
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.heldiv > img{
+  width: 150px;
+}
+
+
+.heldiv > h4{
+ text-align: center;
+ 
+}
