@@ -52,7 +52,7 @@ In our website, we tried our best to clone same as original website.</p>
 
 
 <h2 >Deploy Link :</h2>
-<p ><a rel="noreferrer" target="_blank" href="https://healthkart-clone-project-only-front-end.netlify.app/" rel="nofollow">https://healthkart-clone-project-only-front-end.netlify.app/</a></p>
+<p ><a rel="noreferrer" target="_blank" href="https://pensive-northcutt-977e7c.netlify.app/" rel="nofollow">NetMeds_Clon</a></p>
 </article>
 </div>
 </div>
